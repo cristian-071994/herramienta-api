@@ -1,0 +1,9 @@
+const path = require("node:path");
+
+//reconfiguramos las rutas despues de haber ingresado todas las carpetas a src
+module.exports = {
+  config: path.resolve("src", "config", "config.js"),
+  "models-path": path.resolve("src", "models"),
+  "seeders-path": path.resolve("src", "seeders"),
+  "migrations-path": path.resolve("src", "migrations"),
+};
